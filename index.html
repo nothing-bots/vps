@@ -6,53 +6,112 @@
   <title>Server Bazaar – Premium VPS, RDP & Cloud</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f1f3f6;
+      color: #333;
     }
+
     .hero {
-      background: linear-gradient(135deg, #171717, #2c3e50);
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: white;
       padding: 100px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
     }
+
     .hero h1 {
       font-weight: 700;
+      font-size: 3rem;
     }
-    .btn-primary {
-      background-color: #00b894;
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .btn-custom {
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-buy {
+      background: #00b894;
+      color: white;
       border: none;
     }
+
+    .btn-buy:hover {
+      background: #00a383;
+    }
+
     .btn-outline-light:hover {
-      background-color: white;
+      background: #fff;
       color: #00b894;
     }
+
     .section-title {
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
     }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 16px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-body {
+      padding: 30px;
+    }
+
     .footer {
-      background: #171717;
+      background: #0f2027;
       color: #aaa;
-      padding: 20px 0;
+      padding: 25px 0;
+    }
+
+    .footer small {
+      color: #ddd;
+    }
+
+    .icon-links i {
+      margin: 0 8px;
+      color: #00b894;
+    }
+
+    a {
+      text-decoration: none !important;
     }
   </style>
 </head>
 <body>
 
   <!-- Hero Section -->
-  <section class="hero text-center">
+  <section class="hero">
     <div class="container">
-      <h1 class="display-4">Welcome to <span class="text-success">Server Bazaar</span></h1>
-      <p class="lead mt-3">Blazing-fast VPS, RDP & Cloud Accounts — Designed for Developers, Resellers, and Power Users ⚙️</p>
+      <h1>Welcome to <span class="text-success">Server Bazaar</span></h1>
+      <p>Premium VPS, RDP & Cloud Servers – Built for Developers, Resellers, and Power Users ⚙️</p>
       <div class="mt-4">
-        <a href="https://t.me/its_damiann" class="btn btn-primary btn-lg me-2">
+        <a href="https://t.me/its_damiann" class="btn btn-buy btn-custom me-2">
           <i class="fa-solid fa-bolt"></i> Buy Now
         </a>
-        <a href="https://t.me/DeadlineTechSupport" class="btn btn-outline-light btn-lg me-2">
+        <a href="https://t.me/DeadlineTechSupport" class="btn btn-outline-light btn-custom me-2">
           <i class="fa-solid fa-headset"></i> Support
         </a>
-        <a href="https://t.me/ServerBazaar" class="btn btn-outline-light btn-lg">
+        <a href="https://t.me/ServerBazaar" class="btn btn-outline-light btn-custom">
           <i class="fab fa-telegram"></i> Join Telegram
         </a>
       </div>
@@ -61,23 +120,23 @@
 
   <!-- Plans Section -->
   <section class="container py-5 text-center">
-    <h2 class="section-title mb-4">🔥 Our Plans</h2>
+    <h2 class="section-title">🔥 Our Plans</h2>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Basic VPS</h5>
-            <p class="card-text">4GB RAM • 2 vCPU • 50GB SSD<br>₹299/month</p>
-            <a href="https://t.me/its_damiann" class="btn btn-primary">Buy Now</a>
+            <p class="card-text">4GB RAM • 2 vCPU • 50GB SSD<br><strong>₹299/month</strong></p>
+            <a href="https://t.me/its_damiann" class="btn btn-buy btn-custom">Buy Now</a>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card h-100 shadow">
+        <div class="card h-100 shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Pro RDP</h5>
-            <p class="card-text">8GB RAM • Admin Access • Fast Upload<br>₹499/month</p>
-            <a href="https://t.me/its_damiann" class="btn btn-primary">Buy Now</a>
+            <p class="card-text">8GB RAM • Admin Access • Fast Upload<br><strong>₹499/month</strong></p>
+            <a href="https://t.me/its_damiann" class="btn btn-buy btn-custom">Buy Now</a>
           </div>
         </div>
       </div>
@@ -85,8 +144,8 @@
         <div class="card h-100 shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Cloud Beast</h5>
-            <p class="card-text">32GB RAM • 8 vCPU • Unlimited Bandwidth<br>₹1099/month</p>
-            <a href="https://t.me/its_damiann" class="btn btn-primary">Buy Now</a>
+            <p class="card-text">32GB RAM • 8 vCPU • Unmetered Bandwidth<br><strong>₹1099/month</strong></p>
+            <a href="https://t.me/its_damiann" class="btn btn-buy btn-custom">Buy Now</a>
           </div>
         </div>
       </div>
@@ -96,8 +155,13 @@
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
-      <p class="mb-1">Made with ❤️ by <strong>Team DeadlineTech</strong></p>
-      <small>Payments Accepted: UPI, Binance | Fast Delivery Guaranteed 🚀</small>
+      <p class="mb-2">Made with ❤️ by <strong>Team DeadlineTech</strong></p>
+      <div class="icon-links mb-2">
+        <i class="fab fa-telegram-plane"></i>
+        <i class="fas fa-credit-card"></i>
+        <i class="fas fa-server"></i>
+      </div>
+      <small>Payments Accepted: UPI, Binance | Instant Delivery 🚀</small>
     </div>
   </footer>
 
